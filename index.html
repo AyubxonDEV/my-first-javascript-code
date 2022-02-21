@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>TEST</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="asosiy">
+		<nav>
+			<img src="rasmlar/menu.png" class="menu-rasmi">
+			<img src="rasmlar/logo.png" class="logo" width="200px" height="80px">
+			<ul>
+				<li><a href="">BIRINCHI</a></li>
+				<li><a href="">IKKINCHI</a></li>
+				<li><a href="">UCHINCHI</a></li>
+				<li><a href="">TORTINCHI</a></li>
+			</ul>
+			<button type="button" onclick="toggleBtn()" id="btn"><span></span></button>			
+		</nav>
+		<div class="lampa">
+			<img src="rasmlar/lamp.png" class="chiroq">
+			<img src="rasmlar/light.png" class="yoruglik" id="yoruglik">
+		</div>
+		<div class="textlar">
+			<h1>SHU YERGA <br> YOZILADI</h1>
+			<p>Endi bu  yerga qandaydir asosiy malumot kirgizishingiz kerak
+			men qandayligini bilmayman shuning uchun ozingiz toping</p>
+			<a href="">QANDAYDIR LINK</a>
+		</div>
+	</div>
+	<script>
+		var btn = document.getElementById("btn");
+		var yoruglik = document.getElementById("yoruglik");
+
+		function toggleBtn(){
+			btn.classList.toggle("active");
+			yoruglik.classList.toggle("on")
+		}
+	</script>
+</body>
+</html>
